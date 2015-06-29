@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Connectome Wavelet Analysis",
+  "description": "Runs wavelet analysis on non-Euclidean brain connectome graphs, and statistical analysis of the results between subjects.",
+  "version": "0.0",
+
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+
+  "background": {
+        "scripts": ["index.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+
+}
