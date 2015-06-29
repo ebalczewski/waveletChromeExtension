@@ -2,7 +2,7 @@
 
 <html>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="styleSheet.css"></link>
 
     <head>
         <title>Wavelet Helper</title>
@@ -10,7 +10,20 @@
 
 
     <body>
-        <h2>Upload CSVs Here</h2>
+        <h2>Wavelet Tool</h2>
+        <!-- IMPORTANT:  FORM's enctype must be "multipart/form-data" -->
+        <p><strong>Upload Adjacency Matrix CSVs:</strong> 
+        <form method="post" action="scripts/upload-page.php" enctype="multipart/form-data">
+        <input type="file" name="filesToUpload" id="filesToUpload" multiple="" />
+        </p>
+
+
+        <p> <strong>Files You Selected:</strong> 
+        <ul id="fileList"><li>No Files Selected</li></ul>
+        <script src="scripts/printFiles.js"></script>
+        </p>
+        
+        </form>
     </body>
 
 </html>
